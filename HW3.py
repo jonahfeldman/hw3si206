@@ -19,10 +19,12 @@ class Fortune_Teller:
 
     def __init__(self, fortunes_list):
         self.fortunes_list = fortunes_list  
-        self.questions_list = []
-        self.fortunes_history_list = []
-    
 
+        self.questions_list = []
+
+        self.fortunes_history_list = []
+
+    
     # create the __str__ method
     # It should return a string with all the fortunes
     # in fortunes_list separated by commas
@@ -41,10 +43,12 @@ class Fortune_Teller:
     def get_fortune(self):
 
         num_picker = random.randint(0, len(self.fortunes_list) - 1)   
+
         self.fortunes_history_list.append(num_picker)
+
         return self.fortunes_list[num_picker]    
 
-    
+    #Spaced out code and got rid of comments 
 
     # create the question_check method that takes a question
     # it checks if the question is in the questions_list and if so returns
@@ -57,6 +61,7 @@ class Fortune_Teller:
 
         if question in self.questions_list:
             return "I've already answered that question"
+
         else:
             self.questions_list.append(question)
             return self.get_fortune() 
@@ -81,8 +86,7 @@ class Fortune_Teller:
            
 
 
-            #think back to the 106 question, where we are given the first name last naem and id and we want to create ID where name is banna and id is 7. given 3 lists converting to string and each item in the list has to line up first thing in every list with first thing in every other list 
-            #GOING TO HAVE TO GO THRU THE INDEX. get the fortuen history list index that corresponds ot the numebn r
+            
     # EXTRA POINTS
     # create the most_frequent method
     # it takes as input:
