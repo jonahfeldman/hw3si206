@@ -1,7 +1,7 @@
 ﻿# Your name: Jonah Feldman
 # Your student id: 77432850
 # Your email: jonahlf@umich.edu
-# List who you have worked with on this homework: Avery Feldman
+# List who you have worked with on this homework: Avery Feldman (averylf@umich.edu)
 
 
 # import the random module for use in this program
